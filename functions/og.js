@@ -31,12 +31,12 @@ exports.handler = async function (event, context) {
 	// 	`
 
 	// start a browser instance 
-	// const browser = await puppeteer.launch({
-	// 	args: chromium.args,
-	// 	executablePath: process.env.CHROME_EXECUTABLE_PATH || await chromium.executablePath,
-	// 	defaultViewport: { height: 630, width: 1200 },
-	// 	headless: true,
-	// });
+	const browser = await puppeteer.launch({
+		args: chromium.args,
+		executablePath: process.env.CHROME_EXECUTABLE_PATH || await chromium.executablePath,
+		defaultViewport: { height: 630, width: 1200 },
+		headless: true,
+	});
 
 	// generate a page with above markup and screenshot
 	// const page = await browser.newPage();
@@ -46,7 +46,7 @@ exports.handler = async function (event, context) {
 
 	// return screenshot as final output
 
-	// await browser.close();
+	await browser.close();
 
 	return {
 		statusCode: 200,
