@@ -1,0 +1,14 @@
+{
+  "name": "stylink",
+  "version": "0.1.1",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "chrome-aws-lambda": "^10.1.0",
+    "dotenv": "^16.0.1",
+    "puppeteer-core": "^10.4.0"
+  }
+}
