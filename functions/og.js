@@ -46,7 +46,7 @@ exports.handler = async function (event, context) {
 
 	// return screenshot as final output
 
-	await browser.close();
+	// await browser.close();
 
 	return {
 		statusCode: 200,
