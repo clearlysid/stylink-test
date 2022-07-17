@@ -3,7 +3,7 @@ const puppeteer = require('puppeteer-core');
 
 
 exports.handler = async function (event, context) {
-	const tgid = event.queryStringParameters?.tgid
+	const tgid = event.queryStringParameters && event.queryStringParameters.tgid
 
 	// const headoutApiBaseUrl = `http://headout.com/api/v6/tour-groups/`
 	// const data = await fetch(headoutApiBaseUrl + tgid).then(r => r.json())
